@@ -1,0 +1,15 @@
+{
+	"name": "AzureBlobTarget",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "Profile02.jpg",
+			"folderPath": "output"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

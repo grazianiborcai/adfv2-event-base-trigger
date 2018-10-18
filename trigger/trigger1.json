@@ -1,0 +1,22 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Even Base Trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/event-test/blobs/Profile02.jpg",
+			"scope": "/subscriptions/1b0b7118-35be-4410-8d9b-101e65f48a4c/resourceGroups/rggr/providers/Microsoft.Storage/storageAccounts/adbsagr",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
